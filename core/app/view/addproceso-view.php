@@ -1,6 +1,6 @@
 <?php
 $session_id= session_id(); 
-ini_set('date.timezone','America/Lima'); 
+ini_set('date.timezone','America/Guatemala'); 
 
 	if(@count($_POST)>0){
 

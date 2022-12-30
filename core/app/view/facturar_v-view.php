@@ -216,8 +216,8 @@ $id_varioaa=$id_varios[$i];
                                                                     	<?php echo ProcesoData::getById($id_varios[$i])->cant_noche;?></a>
                                                                     </td>
                                                                     <td><?php echo 'Alojamiento de la habitación '.ProcesoData::getById($id_varios[$i])->getHabitacion()->nombre; ?></td>
-                                                                    <td>$  <?php echo number_format(ProcesoData::getById($id_varios[$i])->precio,2,'.',','); ?></td>
-                                                                    <td>$   <?php echo number_format(ProcesoData::getById($id_varios[$i])->extra,2,'.',','); ?></td>
+                                                                    <td>Q  <?php echo number_format(ProcesoData::getById($id_varios[$i])->precio,2,'.',','); ?></td>
+                                                                    <td>Q   <?php echo number_format(ProcesoData::getById($id_varios[$i])->extra,2,'.',','); ?></td>
                                                                     <td class="ng-binding"><b>$   <?php echo number_format((ProcesoData::getById($id_varios[$i])->precio*ProcesoData::getById($id_varios[$i])->cant_noche)+ProcesoData::getById($id_varios[$i])->total+ProcesoData::getById($id_varios[$i])->extra,2,'.',','); ?> </b></td>
                                                                     
                                                                 </tr>

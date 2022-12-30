@@ -1,7 +1,7 @@
 <?php $reserva = ReservapData::getById($_GET["id"]);?>
 
 <?php 
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d"); 
    $hora = date("H:i:s");
    $doce = date("12:00:00");

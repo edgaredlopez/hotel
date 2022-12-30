@@ -87,7 +87,7 @@ $configuracion = ConfiguracionData::getAllConfiguracion();
     };
 ?>
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
                     
@@ -112,7 +112,7 @@ $configuracion = ConfiguracionData::getAllConfiguracion();
                 </td>
                  <td style="width: 20%; text-align: right; font-size:12px;" >
                   <?php echo $direccion; ?><br />
-                  Móvil <?php echo $telefono; ?> <br />RUC:<?php echo $rnc; ?><br />
+                  Móvil <?php echo $telefono; ?> <br />NIT:<?php echo $rnc; ?><br />
                 </td>
                 
             </tr>

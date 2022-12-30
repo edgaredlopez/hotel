@@ -1,6 +1,6 @@
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
                     
@@ -181,9 +181,9 @@
                                            <td><?php if($detalle->id_producto!=null){echo $detalle->getProducto()->marca;}else{ echo "<center>----</center>"; }  ?></td>
                                             <td><?php if($detalle->id_producto!=null){echo $detalle->getProducto()->descripcion;}else{ echo "<center>----</center>"; }  ?></td>
                                           <td><?php echo $detalle->cantidad; ?></td>
-                                          <td>$   <?php echo number_format($detalle->precio,2,'.',','); ?></td>
+                                          <td>Q   <?php echo number_format($detalle->precio,2,'.',','); ?></td>
                                           <?php $sumar_t=$detalle->cantidad*$detalle->precio; ?>
-                                          <td>$   <?php echo number_format($sumar_t,2,'.',','); ?></td>
+                                          <td>Q   <?php echo number_format($sumar_t,2,'.',','); ?></td>
                                   
                                    
                                     

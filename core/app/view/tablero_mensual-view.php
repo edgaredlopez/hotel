@@ -18,7 +18,7 @@
 </div> 
 <?php 
 
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d"); 
    $hora = date("H:i:s");
    $doce = date("12:00:00");
@@ -93,8 +93,8 @@ date_default_timezone_set('America/Lima');
                         <td><?php echo $proceso->getCliente()->nombre; ?></td>
                         <td><?php echo date($proceso->fecha_entrada); ?></td>
                         <td><?php echo date($proceso->fecha_salida); ?></td>
-                        <td>$  <?php  echo number_format($proceso->precio,2,'.',',');  ?></td>
-                        <td>$  <?php echo number_format($proceso->dinero_dejado,2,'.',',');  ?></td>
+                        <td>Q  <?php  echo number_format($proceso->precio,2,'.',',');  ?></td>
+                        <td>Q  <?php echo number_format($proceso->dinero_dejado,2,'.',',');  ?></td>
                         <td><span class="label bg-red">Pendiente</span></td>
                         <td><a href=""  data-toggle="modal" data-target="#myModal<?php echo $proceso->id; ?>"  class="btn btn-dutch btn-xs"><i class="glyphicon glyphicon-edit"></i> Renovar</a></td>
                       </tr> 

@@ -215,7 +215,7 @@
                                                                 <tr>
                                                                   <td ><?php echo $producto->cantidad; ?></td>
                                                                   <td><?php echo $producto->getProducto()->nombre; ?></td>
-                                                                  <td>$   <?php echo number_format($producto->precio,2,'.',','); ?></td>
+                                                                  <td>Q   <?php echo number_format($producto->precio,2,'.',','); ?></td>
 
                                                                   <?php $sub_total=$producto->precio*$producto->cantidad; ?>
 

@@ -14,7 +14,7 @@ include 'Classes1/PHPExcel.php';
 include 'Classes1/PHPExcel/IOFactory.php';
 // Creamos un objeto PHPExcel
 $objPHPExcel = new PHPExcel();
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
 $hoy = date("Y-m-d");
 $hora = date("H:i:s");                   
 $reportediarios = ProcesoData::getReporteDiario($hoy);

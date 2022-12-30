@@ -23,6 +23,6 @@ Core::$root="";
 
 $lb = new Lb();
 $lb->start();
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
 
 ?>

@@ -66,7 +66,7 @@ $operacion = ProcesoData::getById($_GET['id']);
 
 	    $pdf->setXY(2,$get_YD);
 	    $pdf->SetFont('Arial', 'B', 10);
-	    $pdf->MultiCell(73, 4.2, 'RUC : '.$rnc, 0,'C',0 ,1);
+	    $pdf->MultiCell(73, 4.2, 'NIT : '.$rnc, 0,'C',0 ,1);
 
 	    $pdf->setXY(2,$get_YD + 4);
 	    $pdf->SetFont('Arial', '', 7);
@@ -184,6 +184,7 @@ $operacion = ProcesoData::getById($_GET['id']);
 		$pdf->SetFillColor(0,0,0);
 		$pdf->Code39(9,$get_Y+64,'T00000'.$operacion->id,1,5);
 		$pdf->Text(28, $get_Y+74, '*T00000'.$operacion->id.'*');
+		$pdf->Text(12.5, $get_Y+78, 'Edbyte Technology - 55573359');
 
 	}  else {
 

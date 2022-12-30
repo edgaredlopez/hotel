@@ -127,7 +127,7 @@
                        
 
 
-                         <td>$    <?php echo number_format($subtotal+$subtotal_prod,2,'.',','); ?></td>
+                         <td>Q    <?php echo number_format($subtotal+$subtotal_prod,2,'.',','); ?></td>
                         <td> <?php echo $reportediario->nro_folio; ?></td>
                         <td><?php echo date($reportediario->fecha_entrada); ?></td> 
                         <td><?php echo date($reportediario->fecha_salida); ?></td>

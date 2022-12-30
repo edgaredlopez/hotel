@@ -56,7 +56,7 @@
                 <div class="row">
                   <div class="col-sm-12"> 
                     <label>Documento del cliente</label>
-                    <input type="text" name="documento_cliente" class="form-control" required=""  placeholder="Ingrese documento (RUC y/o DNI) ">
+                    <input type="text" name="documento_cliente" class="form-control" required=""  placeholder="Ingrese documento (NIT y/o DNI) ">
                   </div>
                 </div>
               </div>

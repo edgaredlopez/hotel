@@ -99,7 +99,7 @@
                        
 
 
-                        <td>$    <?php echo number_format($subtotal,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($subtotal,2,'.',','); ?></td>
                      
                         <td><?php echo date($reportediario->fecha_creada); ?></td> 
                        

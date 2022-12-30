@@ -9,7 +9,7 @@ if(@count($cajas)>0){ $id_caja=$cajas->id;
 if($id_caja!=0){
 
 
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d"); 
    $hora = date("H:i:s");
    $doce = date("12:00:00");

@@ -10,7 +10,7 @@
 
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
  if(isset($_POST['start'])){                   

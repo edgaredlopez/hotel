@@ -221,7 +221,7 @@
                         <td><?php echo $producto->nombre; ?></td>
                         <td><?php if($producto->marca!="NULL"){ echo $producto->marca;}else{ echo "------"; } ?></td>
                         <td><?php if($producto->descripcion!="NULL"){ echo $producto->descripcion;}else{ echo "------"; } ?></td>
-                        <td>$   <?php echo number_format($producto->precio_compra,2,'.',','); ?></td>
+                        <td>Q   <?php echo number_format($producto->precio_compra,2,'.',','); ?></td>
                         <td><?php echo $producto->stock; ?></td>
 
                         

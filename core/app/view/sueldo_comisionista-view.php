@@ -2,7 +2,7 @@
 
 
 <?php 
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
   $hoy = date("Y-m-d"); 
   
   
@@ -210,12 +210,12 @@ date_default_timezone_set('America/Lima');
                         <td><?php echo $start; ?></td>
                         <td><?php echo $end; ?></td>
                         <td><?php echo $sueldo->nombre; ?></td> 
-                        <td>$    <?php echo number_format($debe,2,'.',','); ?></td> 
+                        <td>Q    <?php echo number_format($debe,2,'.',','); ?></td> 
                         <td><?php echo $sueldo->porcentaje.' %'; ?></td> 
 
                         <?php $corresponde=($sueldo->porcentaje*$debe)/100; ?> 
                         
-                        <td>$    <?php echo number_format($corresponde,2,'.',','); ?></td>  
+                        <td>Q    <?php echo number_format($corresponde,2,'.',','); ?></td>  
                         
 
                         

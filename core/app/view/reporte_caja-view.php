@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="assets/js/vendor/footable/css/footable.core.min.css">
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
                     
@@ -251,7 +251,7 @@ if($id_caja!=0){
                         <td><b>$     <?php echo number_format($reportediario->precio,2,'.',','); ?></b></td>
                         <td><b>$    <?php echo number_format($reportediario->cant_noche,2,'.',','); ?></b></td>
                         <?php $subtotal= ($reportediario->precio*$reportediario->cant_noche)+$reportediario->total+$reportediario->extra; ?>
-                        <td>$    <?php echo number_format($subtotal,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($subtotal,2,'.',','); ?></td>
                         <td> <?php echo $reportediario->nro_folio; ?></td>
                         <td><?php echo date($reportediario->fecha_entrada); ?></td>
                         <td><?php echo date($reportediario->fecha_salida); ?></td>

@@ -7,10 +7,10 @@
 if(!isset($_GET["action"])){
 //	Bootload::load("default");
 	Module::loadLayout("index");
-	date_default_timezone_set('America/Lima');
+	date_default_timezone_set('America/Guatemala');
 }else{
 	Action::load($_GET["action"]);
-	date_default_timezone_set('America/Lima');
+	date_default_timezone_set('America/Guatemala');
 }
 
 ?>

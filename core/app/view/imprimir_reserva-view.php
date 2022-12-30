@@ -195,9 +195,9 @@
                                                                 <tr>
                                                                     
                                                                     <td><?php echo 'Habitación '.$operacion->getHabitacion()->nombre; ?></td>
-                                                                    <td>$  <?php echo number_format($operacion->total,2,'.',','); ?></td>
+                                                                    <td>Q  <?php echo number_format($operacion->total,2,'.',','); ?></td>
                                                                    
-                                                                    <td>$  <?php echo number_format($operacion->total,2,'.',','); ?></td>
+                                                                    <td>Q  <?php echo number_format($operacion->total,2,'.',','); ?></td>
                                                                     
                                                                 </tr>
 

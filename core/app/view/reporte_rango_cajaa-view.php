@@ -10,7 +10,7 @@
 
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
  if(isset($_POST['start'])){                   
@@ -229,17 +229,17 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $caja->fecha_apertura; ?></td>
                         
  
-                        <td>$    <?php echo number_format($caja->monto_apertura,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($caja->monto_apertura,2,'.',','); ?></td>
                        
                        
-                        <td>$    <?php echo number_format($egreso,2,'.',','); ?></td>
-                        <td>$    <?php echo number_format($total_otros_ingresos,2,'.',','); ?></td>
-                        <td>$    <?php echo number_format($ingreso_efectivo,2,'.',','); ?></td>
-                        <td>$    <?php echo number_format($ingreso_efectivo_prod,2,'.',','); ?></td>
-                        <td>$    <?php echo number_format($ingreso_efectivo+$ingreso_efectivo_prod,2,'.',','); ?></td>
-                        <td>$    <?php echo number_format(($ingreso_efectivo+$ingreso_efectivo_prod)-$egreso+$total_otros_ingresos+$caja->monto_apertura,2,'.',','); ?> </td>
-                        <td>$    <?php echo number_format($ingreso-($ingreso_efectivo+$ingreso_efectivo_prod),2,'.',','); ?> </td>
-                        <td>$    <?php echo number_format(($ingreso-$egreso)+$total_otros_ingresos+$caja->monto_apertura,2,'.',','); ?> </td>
+                        <td>Q    <?php echo number_format($egreso,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($total_otros_ingresos,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($ingreso_efectivo,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($ingreso_efectivo_prod,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($ingreso_efectivo+$ingreso_efectivo_prod,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format(($ingreso_efectivo+$ingreso_efectivo_prod)-$egreso+$total_otros_ingresos+$caja->monto_apertura,2,'.',','); ?> </td>
+                        <td>Q    <?php echo number_format($ingreso-($ingreso_efectivo+$ingreso_efectivo_prod),2,'.',','); ?> </td>
+                        <td>Q    <?php echo number_format(($ingreso-$egreso)+$total_otros_ingresos+$caja->monto_apertura,2,'.',','); ?> </td>
                         <th><?php echo $caja->fecha_cierre; ?></th>
                         <th>Cerrado</th>
                       </tr> 

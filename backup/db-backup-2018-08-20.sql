@@ -321,7 +321,7 @@ CREATE TABLE `tipo_documento` (
 
 INSERT INTO tipo_documento VALUES("1","DNI","2018-02-15 08:23:24"),
 ("2","PASAPORTE","2018-02-15 09:24:24"),
-("3","RUC","2018-02-15 09:24:25");
+("3","NIT","2018-02-15 09:24:25");
 
 
 

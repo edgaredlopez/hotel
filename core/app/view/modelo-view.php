@@ -23,7 +23,7 @@ window.location='index.php?view=recepcion';
 </div>
 <?php 
 
-date_default_timezone_set('America/Lima');
+date_default_timezone_set('America/Guatemala');
 $hoy = date("Y-m-d"); 
 $hora = date("H:i:s");
 

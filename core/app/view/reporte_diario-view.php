@@ -10,7 +10,7 @@
 
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
                   
@@ -172,9 +172,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <?php $subtotal_prod=$subtotal_prod+($p_prod->precio*$p_prod->cantidad); ?>
                         <?php endforeach; ?>
                         
-                        <td>$   <?php echo number_format($subtotal,2,'.',','); ?></td>
-                        <td>$   <?php echo number_format($subtotal_prod,2,'.',','); ?></td>
-                        <td>$   <?php echo number_format($subtotal_prod+$subtotal,2,'.',','); ?></td>
+                        <td>Q   <?php echo number_format($subtotal,2,'.',','); ?></td>
+                        <td>Q   <?php echo number_format($subtotal_prod,2,'.',','); ?></td>
+                        <td>Q   <?php echo number_format($subtotal_prod+$subtotal,2,'.',','); ?></td>
                         
                         
                         <td><?php if($reportediario->id_tipo_pago=='1'){ echo "EFECTIVO";}elseif ($reportediario->id_tipo_pago=='2') {

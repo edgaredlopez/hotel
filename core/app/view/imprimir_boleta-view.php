@@ -197,8 +197,8 @@
                                                                 <tr>
                                                                     <td><a href="javascript:;"><?php echo $operacion->cant_noche; ?></a></td>
                                                                     <td><?php echo 'Alojamiento de la habitación '.$operacion->getHabitacion()->nombre; ?></td>
-                                                                    <td>$   <?php echo number_format($operacion->precio,2,'.',','); ?></td>
-                                                                    <td>$  <?php echo number_format($operacion->extra,2,'.',','); ?></td>
+                                                                    <td>Q   <?php echo number_format($operacion->precio,2,'.',','); ?></td>
+                                                                    <td>Q  <?php echo number_format($operacion->extra,2,'.',','); ?></td>
                                                                     <td class="ng-binding"><b>$   <?php echo number_format(($operacion->precio*$operacion->cant_noche)+$operacion->total+$operacion->extra,2,'.',','); ?> </b></td>
                                                                     
                                                                 </tr>
@@ -213,7 +213,7 @@
                                                                 <tr>
                                                                   <td ><?php echo $producto->cantidad; ?></td>
                                                                   <td><?php echo $producto->getProducto()->nombre; ?></td>
-                                                                  <td>$   <?php echo number_format($producto->precio,2,'.',','); ?></td>
+                                                                  <td>Q   <?php echo number_format($producto->precio,2,'.',','); ?></td>
 
                                                                   <?php $sub_total=$producto->precio*$producto->cantidad; ?>
 

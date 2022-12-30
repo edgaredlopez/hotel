@@ -1,6 +1,6 @@
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
  if(isset($_POST['start'])){                   
@@ -194,7 +194,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <?php $subtotal=$subtotal+$p->monto; ?>
                         <?php endforeach; ?>
 
-                        <td>$  <?php echo number_format($subtotal,2,'.',','); ?></td>
+                        <td>Q  <?php echo number_format($subtotal,2,'.',','); ?></td>
                         <td> <?php echo $reportediario->nro_folio; ?></td>
                         <td><?php echo date($reportediario->fecha_entrada); ?></td>
                         <td><?php echo date($reportediario->fecha_salida); ?></td>

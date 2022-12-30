@@ -10,7 +10,7 @@
 
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
  if(isset($_POST['start'])){                   
@@ -140,7 +140,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $numero; ?></td>
                         <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
                         <td><?php echo $reportediario->fecha_entrada; ?></td>
-                        <td>$   <?php echo $reportediario->precio; ?></td>
+                        <td>Q   <?php echo $reportediario->precio; ?></td>
                         
                         <td><?php echo $reportediario->getCliente()->nombre; ?></td>
                         <td><?php echo $reportediario->getCliente()->documento; ?></td>

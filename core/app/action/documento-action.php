@@ -38,7 +38,7 @@
 <?php }if(isset($_POST['id']) and $_POST['id']=="3"){ ?>
 
             <div class="form-group">
-                <label>RUC:</label>
+                <label>NIT:</label>
 
                 <div class="input-group">
                   <div class="input-group-addon">

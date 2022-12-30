@@ -90,7 +90,7 @@
                         <td><?php echo $reportediario->getHabitacion()->nombre; ?></td>
                        
                         <?php $subtotal= ($reportediario->precio*$reportediario->cant_noche)+$reportediario->total+$reportediario->extra; ?>
-                        <td>$    <?php echo number_format($subtotal,2,'.',','); ?></td>
+                        <td>Q    <?php echo number_format($subtotal,2,'.',','); ?></td>
                         <td> <?php echo $reportediario->nro_folio; ?></td>
                         <td><?php echo date($reportediario->fecha_entrada); ?></td> 
                         <td><?php echo date($reportediario->fecha_salida); ?></td>

@@ -72,7 +72,7 @@ $operacion = ReservapData::getById($_GET['id']);
 
 	    $pdf->setXY(2,$get_YD);
 	    $pdf->SetFont('Arial', 'B', 10);
-	    $pdf->MultiCell(73, 4.2, 'RUC : '.$rnc, 0,'C',0 ,1);
+	    $pdf->MultiCell(73, 4.2, 'NIT : '.$rnc, 0,'C',0 ,1);
 
 	    $pdf->setXY(2,$get_YD + 4);
 	    $pdf->SetFont('Arial', 'B', 7);
@@ -142,7 +142,7 @@ $operacion = ReservapData::getById($_GET['id']);
 		$pdf->Text(2, $get_Y+25, '-----------------------------------------------------------------------');
 		
 		$pdf->SetFont('Arial','BI',8.5);
-		$pdf->Text(3, $get_Y+32, 'Precios en : '.'CORDOBAS ');
+		$pdf->Text(3, $get_Y+32, 'Precios en : '.'Quetzales ');
 		
 		
 		$pdf->SetFont('Arial','B',8.5);
@@ -156,6 +156,7 @@ $operacion = ReservapData::getById($_GET['id']);
 		$pdf->SetFillColor(0,0,0);
 		$pdf->Code39(9,$get_Y+59,'T00000'.$operacion->id,1,5);
 		$pdf->Text(28, $get_Y+69, '*T00000'.$operacion->id.'*');
+		$pdf->Text(12.5, $get_Y+73, 'Edbyte Technology - 55573359');
 
 	}  else {
 

@@ -10,7 +10,7 @@
 
 
 <?php 
-     date_default_timezone_set('America/Lima');
+     date_default_timezone_set('America/Guatemala');
      $hoy = date("Y-m-d");
      $hora = date("H:i:s");
  if(isset($_POST['start'])){                   
@@ -141,7 +141,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <td><?php echo $proceso->getCliente()->nombre; ?></td>
                         <td><?php echo date($proceso->fecha_entrada); ?></td>
                         <td><?php echo date($proceso->fecha_salida); ?></td>
-                        <td>$  <?php  echo number_format($proceso->precio,2,'.',',');  ?></td>
+                        <td>Q  <?php  echo number_format($proceso->precio,2,'.',',');  ?></td>
 
                         <?php $subtotal=0; ?>
                         <?php $tmps = PagoProcesoData::getAllProceso($proceso->id); 
@@ -155,7 +155,7 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
                         <?php $subtotal_prod=$subtotal_prod+($p_prod->precio*$p_prod->cantidad); ?>
                         <?php endforeach; ?>
 
-                        <td>$  <?php echo number_format($subtotal+$subtotal_prod,2,'.',',');  ?></td>
+                        <td>Q  <?php echo number_format($subtotal+$subtotal_prod,2,'.',',');  ?></td>
                         <td><span class="label bg-greensea">Finalizado</span></td>
                         
                         </tr>
